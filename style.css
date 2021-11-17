@@ -113,18 +113,21 @@
 
 .char{
     position:absolute;
-    width: 50px;
-    height: 100px;
-    top: calc(60% - 100px);
+    width: 75px;
+    height: 75px;
+    top: calc(65% - 100px);
     left: calc(30% - 30px);
-    border: 3px solid black;
     z-index: 12;
 }
 
 .player{
-   background-image: url("img/run.gif");
-    height: 50px;
-    width: 30px;
+    width: 75px;
+    height: 75px;
+    background: url("img/run.gif") no-repeat no-repeat;
+    background-size: 75px 75px;
+    position: relative;
+    padding:0;
+    
 }
 
 
