@@ -3,14 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-image: url("img/11_background.png");
-    overflow: hidden;
-}
-
-.content{
-    position: relative;
-}
 
 .parallax{
     position: absolute;
@@ -24,9 +16,8 @@ body{
     background: url("img/01_ground.png");
     background-repeat: repeat-x;
     background-size: contain;
-    z-index: 10;
-    width: 100%;
-    animation: animate 20s linear infinite;
+    z-index: 11;
+    animation: animate 30s linear infinite;
     
 }
 
@@ -34,8 +25,7 @@ body{
     background-image: url("img/02_trees\ and\ bushes.png");
     background-repeat: repeat-x;
     background-size: contain;
-    width: 100%;
-    z-index: 9;
+    z-index: 10;
     animation: animate 40s linear infinite;
 }
 
@@ -43,8 +33,7 @@ body{
     background-image: url("img/03_distant_trees.png");
     background-repeat: repeat-x;
     background-size: contain;
-    width: 100%;
-    z-index: 8;
+    z-index: 9;
     animation: animate 50s linear infinite;
 }
 
@@ -52,8 +41,7 @@ body{
     background-image: url("img/04_bushes.png");
     background-repeat: repeat-x;
     background-size: contain;
-    width: 100%;
-    z-index: 7;
+    z-index: 8;
     animation: animate 60s linear infinite;
 }
 
@@ -61,8 +49,7 @@ body{
     background-image: url("img/05_hill1.png");
     background-repeat: repeat-x;
     background-size: contain;
-    width: 100%;
-    z-index: 6;
+    z-index: 7;
     animation: animate 70s linear infinite;
 }
 
@@ -70,8 +57,7 @@ body{
     background-image: url("img/06_hill2.png");
     background-repeat: repeat-x;
     background-size: contain;
-    width: 100%;
-    z-index: 5;
+    z-index: 6;
     animation: animate 80s linear infinite;
 }
 
@@ -79,8 +65,7 @@ body{
     background-image: url("img/07_huge_clouds.png");
     background-repeat: repeat-x;
     background-size: contain;
-    width: 100%;
-    z-index: 4;
+    z-index: 5;
     animation: animate 85s linear infinite;
 }
 
@@ -88,8 +73,7 @@ body{
     background-image: url("img/08_clouds.png");
     background-repeat: repeat-x;
     background-size: contain;
-    width: 100%;
-    z-index: 3;
+    z-index: 4;
     animation: animate 55s linear infinite;
 }
 
@@ -97,8 +81,7 @@ body{
     background-image: url("img/09_distant_clouds1.png");
     background-repeat: repeat-x;
     background-size: contain;
-    width: 100%;
-    z-index: 2;
+    z-index: 3;
     animation: animate 70s linear infinite;
 }
 
@@ -106,7 +89,14 @@ body{
     background-image: url("img/10_distant_clouds.png");
     background-repeat: repeat-x;
     background-size: contain;
-    width: 100%;
+    z-index: 2;
+    animation: animate 100s linear infinite;
+}
+
+.layer_11{
+    background-image: url("img/11_background.png");
+    background-repeat: repeat-x;
+    background-size: contain;
     z-index: 1;
     animation: animate 100s linear infinite;
 }
@@ -116,26 +106,23 @@ body{
         background-position-x: 0px;
     }
     to {
-        background-position-x: 1000px;
+        background-position-x: -2040px;
     }
 }
 
 
 .char{
     position:absolute;
-    margin-left: 400px;
-    top: 500px;
-    width: 200px;
-    height: 300px;
-    z-index: 11;
-    overflow: hidden;
-    
-    
+    width: 50px;
+    height: 100px;
+    top: calc(60% - 100px);
+    left: calc(30% - 30px);
+    border: 3px solid black;
+    z-index: 12;
 }
 
 .player{
-    position: absolute;
-    background: url("img/run.gif");
+   background-image: url("img/run.gif");
     height: 50px;
     width: 30px;
 }
