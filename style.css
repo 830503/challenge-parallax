@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("img/11_background.png");
+    overflow: hidden;
+}
+
+.content{
+    position: relative;
+}
+
+.parallax{
+    position: absolute;
+    width: 100%;
+    height: 850px;  
+    top: 0;
+    left: 0;
+}
+
+.layer_01{
+    background: url("img/01_ground.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    z-index: 10;
+    width: 100%;
+    
+}
+
+.layer_02{
+    background-image: url("img/02_trees\ and\ bushes.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 100%;
+    z-index: 9;
+}
+
+.layer_03{
+    background-image: url("img/03_distant_trees.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 100%;
+    z-index: 8;
+}
+
+.layer_04{
+    background-image: url("img/04_bushes.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 100%;
+    z-index: 7;
+}
+
+.layer_05{
+    background-image: url("img/05_hill1.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 100%;
+    z-index: 6;
+}
+
+.layer_06{
+    background-image: url("img/06_hill2.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 100%;
+    z-index: 5;
+}
+
+.layer_07{
+    background-image: url("img/07_huge_clouds.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 100%;
+    z-index: 4;
+}
+
+.layer_08{
+    background-image: url("img/08_clouds.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 100%;
+    z-index: 3;
+}
+
+.layer_09{
+    background-image: url("img/09_distant_clouds1.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 100%;
+    z-index: 2;
+}
+
+.layer_10{
+    background-image: url("img/10_distant_clouds.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 100%;
+    z-index: 1;
+}
+
