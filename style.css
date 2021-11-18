@@ -110,36 +110,53 @@
     }
 }
 
-
-.char{
-    position:absolute;
-    width: 75px;
-    height: 75px;
-    top: 500px;
-    left: 100px;
+.marsh{
+    position: absolute;
+    top: 530px;
+    left: 100%;
+    width: 70px;
+    height: 70px;
+    background: url("img/marshmallow.png");
+    background-size: 70px 70px;
     z-index: 12;
-    
+    animation: block 10s linear infinite;
+}
+
+@keyframes block {
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: 0;
+    }
 }
 
 .player{
     position: absolute;
-    width: 75px;
-    height: 75px;
+    top: 500px;
+    left: 100px;
+    z-index: 12;
+    width: 100px;
+    height: 100px;
     background: url("img/run.gif") no-repeat no-repeat;
-    background-size: 75px 75px;
-    
+    background-size: 100px 100px;
 }
+
 .jump{
-    animation: jump 0.4s linear;
+    animation: jump 0.3s linear;
 }
+
 @keyframes jump {
     0% {
         top: 500px;
     }
     100% {
-        top: 400px;
+        top: 430px;
     }
 }
+
+
+
 
 
 
