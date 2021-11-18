@@ -115,19 +115,30 @@
     position:absolute;
     width: 75px;
     height: 75px;
-    top: calc(65% - 100px);
-    left: calc(30% - 30px);
+    top: 500px;
+    left: 100px;
     z-index: 12;
+    
 }
 
 .player{
+    position: absolute;
     width: 75px;
     height: 75px;
     background: url("img/run.gif") no-repeat no-repeat;
     background-size: 75px 75px;
-    position: relative;
-    padding:0;
     
+}
+.jump{
+    animation: jump 0.4s linear;
+}
+@keyframes jump {
+    0% {
+        top: 500px;
+    }
+    100% {
+        top: 400px;
+    }
 }
 
 
