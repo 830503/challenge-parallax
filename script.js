@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     let char = document.querySelector('.player');
     let obstacle = document.querySelector('.marsh');
+    let score = document.getElementById('score');
 
     function control(e) {
         if (e.keyCode === 32) {
@@ -22,12 +23,19 @@ document.addEventListener('DOMContentLoaded', () => {
         // console.log(charTop);
         let obsLeft = parseInt(window.getComputedStyle(marsh).getPropertyValue('left'));
         //console.log(obsLeft);
+        
         if (obsLeft < 40 && obsLeft > 0 && charTop >= 500){
+            
+            alert("Game over.");
+            counter = 0;
+
             //console.log('collision');
-            alert("Game over");
+            
+        }else{
+            counter++;
+            score.innerHTML =  Math.floor(counter/100);  
         }
     }, 10);
-    
     
     document.addEventListener('keydown', control)
 
