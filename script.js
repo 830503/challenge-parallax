@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let char = document.querySelector('.player');
     let obstacle = document.querySelector('.marsh');
     let score = document.getElementById('score');
+    let counter = 0;
 
     function control(e) {
         if (e.keyCode === 32) {
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+
     let CheckAlive = setInterval(() => {
         let charTop = parseInt(window.getComputedStyle(player).getPropertyValue('top'));
         // console.log(charTop);
@@ -25,16 +27,23 @@ document.addEventListener('DOMContentLoaded', () => {
         //console.log(obsLeft);
         
         if (obsLeft < 40 && obsLeft > 0 && charTop >= 500){
-            
             alert("Game over.");
             
 
             //console.log('collision');
-            
+        }else{
+            counter++;
+            score.innerHTML = Math.floor(counter/100);
         }
+
+        
     }, 10);
-    
-    document.addEventListener('keydown', control)
+
+    // function stopCounter(){
+    //     clearInterval(CheckAlive);
+    // }
+    // stopCounter();
+    document.addEventListener('keydown', control);
 
 
 
