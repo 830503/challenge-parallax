@@ -10,8 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let score = document.getElementById('score');
     let counter = 0;
 
-    // music.loop = true;
-    // music.muted = true;
     starbtn.addEventListener('click', () => {
         music.loop = true;
         music.play();
@@ -45,10 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (obsLeft < 40 && obsLeft > 0 && charTop >= 500) {
             alert("Game over.");
             counter = 0;
-
-
-
-
             //console.log('collision');
         } else {
             counter++;
