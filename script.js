@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let obstacle = document.querySelector('.marsh');
     let starbtn = document.getElementById('starbtn');
 
-    let music = document.getElementById('audio');
+    let music = new Audio('music/music.mov');
     let gameover = new Audio('music/gameover.mp3');
     let jumpMusic = new Audio('jump.mp3');
 
