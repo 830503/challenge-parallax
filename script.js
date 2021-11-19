@@ -27,13 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (obsLeft < 40 && obsLeft > 0 && charTop >= 500){
             
             alert("Game over.");
-            counter = 0;
+            
 
             //console.log('collision');
             
-        }else{
-            counter++;
-            score.innerHTML =  Math.floor(counter/100);  
         }
     }, 10);
     

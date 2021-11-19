@@ -118,6 +118,7 @@
     height: 70px;
     background: url("img/marshmallow.png");
     background-size: 70px 70px;
+    overflow: hidden;
     z-index: 12;
     animation: block 5s linear infinite;
 }
