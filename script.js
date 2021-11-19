@@ -1,19 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
     let char = document.querySelector('.player');
     let obstacle = document.querySelector('.marsh');
+    let starbtn = document.getElementById('starbtn');
 
     let music = document.getElementById('audio');
-    console.log(music);
     let gameover = new Audio('music/gameover.mp3');
     let jumpMusic = new Audio('jump.mp3');
 
     let score = document.getElementById('score');
     let counter = 0;
 
-    music.loop = true;
-    music.muted = true;
-    music.play();
-    music.volume = 0.5;
+    // music.loop = true;
+    // music.muted = true;
+    starbtn.addEventListener('click', () => {
+        music.loop = true;
+        music.play();
+        music.volume = 0.5;
+    })
+
 
     function control(e) {
         if (e.keyCode === 32) {
@@ -41,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (obsLeft < 40 && obsLeft > 0 && charTop >= 500) {
             alert("Game over.");
             counter = 0;
-            
+
 
 
 
