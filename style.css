@@ -1,4 +1,5 @@
 * {
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -177,6 +178,28 @@ span{
     left: 45%;  
 }
 
+#content{
+    position: absolute;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(16, 63, 82, 0.623);
+    font-weight: bold;
+    display: flex;
+    z-index: 12;
+    top: 700px;
+    left: 35%; 
+}
 
+#starbtn{
+    position: absolute;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(16, 63, 82, 0.623);
+    font-weight: bold;
+    
+    z-index: 12;
+    top: 700px;
+    right: 5%; 
+}
 
 

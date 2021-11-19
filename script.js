@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let char = document.querySelector('.player');
     let obstacle = document.querySelector('.marsh');
 
-    let music = new Audio('music/music.mov');
+    let music = document.getElementById('audio');
+    console.log(music);
     let gameover = new Audio('music/gameover.mp3');
     let jumpMusic = new Audio('jump.mp3');
 
@@ -10,8 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let counter = 0;
 
     music.loop = true;
+    music.muted = true;
     music.play();
-    // music.volume = 0.5;
+    music.volume = 0.5;
 
     function control(e) {
         if (e.keyCode === 32) {
@@ -24,46 +26,32 @@ document.addEventListener('DOMContentLoaded', () => {
             char.classList.add('jump');
             jumpMusic.play();
             setTimeout(function () {
-                char.classList.remove('jump');
-                jumpMusic.paused();
-                jumpMusic.currentTime = 0;
+                char.classList.remove('jump')
             }, 500)
         }
     }
 
-    let CheckAlive = setInterval(() => {
+    let CheckAlive = true;
+    setInterval(() => {
         let charTop = parseInt(window.getComputedStyle(player).getPropertyValue('top'));
         // console.log(charTop);
         let obsLeft = parseInt(window.getComputedStyle(marsh).getPropertyValue('left'));
         //console.log(obsLeft);
-        
-        if (obsLeft < 40 && obsLeft > 0 && charTop >= 500){
+
+        if (obsLeft < 40 && obsLeft > 0 && charTop >= 500) {
             alert("Game over.");
-            music.paused();
-            gameover.play();
+            counter = 0;
             
-            counter=0;
+
+
 
             //console.log('collision');
-        }else{
+        } else {
             counter++;
-            score.innerHTML = Math.floor(counter/100);
+            score.innerHTML = Math.floor(counter / 100);
         }
     }, 10);
-    
+
     document.addEventListener('keydown', control);
 
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
