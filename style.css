@@ -162,18 +162,19 @@
     }
 }
 
-.score{
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    width: 200px;
-    height: 100px;
-    text-align: center;
-    font: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
-    z-index: 13;
-   
+span{
+    z-index: 12;
+}
 
+#scoreBox{
+    position: absolute;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(16, 63, 82, 0.623);
+    font-weight: bold;
+    display: flex;
+    top: 100px;
+    left: 45%;  
 }
 
 
