@@ -27,8 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
         //console.log(obsLeft);
         
         if (obsLeft < 40 && obsLeft > 0 && charTop >= 500){
-            alert("Game over.");
             
+            alert("Game over.");
+            counter=0;
 
             //console.log('collision');
         }else{
@@ -38,11 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         
     }, 10);
-
-    // function stopCounter(){
-    //     clearInterval(CheckAlive);
-    // }
-    // stopCounter();
+    
     document.addEventListener('keydown', control);
 
 
